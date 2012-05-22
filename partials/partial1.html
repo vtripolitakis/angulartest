@@ -1,1 +1,12 @@
 <h2>partial1</h2>
+
+<input ng-model="nameInput" name="nameInput" type="text"/>
+
+<ul>
+    <li ng-repeat="result in results |filter:nameInput" ng-click="showPersonInfo(result.id);">
+    	{{result.firstName}} {{result.lastName}}
+      </li>
+ </ul>
+
+<img ng-src="{{img1}}" />
+ 

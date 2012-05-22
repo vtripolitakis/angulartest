@@ -4,5 +4,5 @@
 
 angular.module('myappServices', ['ngResource']).
     factory('Property', function($resource){
-  return $resource('url goes here', {} });
+  return $resource('test.php',{},{fetchPerson:{method:"GET", params:{},isArray:false}});
 });
